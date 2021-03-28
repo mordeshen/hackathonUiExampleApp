@@ -30,36 +30,32 @@
         app:layout_constraintStart_toStartOf="@+id/heroism_intro_image"
         app:layout_constraintTop_toBottomOf="@+id/heroism_intro_image" />
 
-    <Button
-        android:id="@+id/btn_login"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="already have account? login here "
-        android:textSize="10sp"
-        android:textColor="#6A6464"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:rippleColor="#756565" />
-
     <TextView
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="16dp"
         android:text="The Parade of Heroism is a national educational project to transfer the memory of the Holocaust from the passive to the active, Annette wants to convey our past stories, from a worldview that must put the person at the center, and strengthen the image of survivors and perished as heroes. Because heroism is everywhere, and especially in everyday and small deeds"
         android:textColorHighlight="#FFEB3B"
         android:textColorLink="#FFC107"
-        app:layout_constraintBottom_toTopOf="@+id/btn_login"
+        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/about_us" />
 
-<!--    <RadioGroup-->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!--    <RadioGroup-->
 <!--        android:layout_width="wrap_content"-->
 <!--        android:layout_height="wrap_content"-->
 <!--        app:layout_constraintBottom_toTopOf="@+id/heroism_intro_image"-->

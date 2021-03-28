@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false"
+    tools:context=".ui.login.CreateAccountFirstActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".LoginFlow.CreateAccountFirstActivity">
+
+                <Button
+                    android:id="@+id/backButtonImageView"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="44dp"
+                    android:background="@drawable/top_back_arrow_24"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.891"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <View
+                    android:id="@+id/ellipse_"
+                    android:layout_width="match_parent"
+                    android:layout_height="88dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/ellipse_59"
+                    android:elevation="1dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/createAccTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/createacount"
+                    android:textColor="#350016"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:translationZ="1dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="139dp"
+                    android:layout_height="139dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="120dp"
+                    android:background="@drawable/circle"
+                    android:padding="30dp"
+                    app:srcCompat="@drawable/ic_menu_camera"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.503"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/ellipse_" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image_2"
+                    android:layout_width="139dp"
+                    android:layout_height="139dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="120dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.503"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/ellipse_"/>
+
+                <ImageView
+                    android:id="@+id/uploaded_image"
+                    android:layout_width="139dp"
+                    android:layout_height="139dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="120dp"
+                    android:shape="oval"
+                    android:padding="30dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.503"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/ellipse_" />
+
+                <Button
+                    android:id="@+id/addImageButtonImageView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="219dp"
+                    android:layout_marginLeft="219dp"
+                    android:layout_marginTop="230dp"
+                    android:background="@drawable/add_circle_24"
+                    android:translationZ="1dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.123"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <EditText
+                    android:id="@+id/privateNameEditText"
+                    android:layout_width="325dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="28dp"
+                    android:background="@drawable/textfield_d"
+                    android:drawableRight="@drawable/profile_user_details"
+                    android:drawablePadding="7dp"
+                    android:ems="10"
+                    android:hint="@string/firstname"
+                    android:inputType="textPersonName"
+                    android:paddingRight="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+                <EditText
+                    android:id="@+id/familyNameEditText"
+                    android:layout_width="325dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/textfield_d"
+                    android:drawableRight="@drawable/profile_user_details"
+                    android:drawablePadding="7dp"
+                    android:ems="10"
+                    android:hint="@string/lastName"
+                    android:inputType="textPersonName"
+                    android:paddingRight="10dp"
+                    android:gravity="right"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.505"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/privateNameEditText" />
+
+                <EditText
+                    android:id="@+id/emailEditText"
+                    android:layout_width="325dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/textfield_d"
+                    android:drawableRight="@drawable/email"
+                    android:drawablePadding="7dp"
+                    android:ems="10"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:paddingRight="12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/familyNameEditText" />
+
+                <EditText
+                    android:id="@+id/passwordEditText"
+                    android:layout_width="325dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/textfield_d"
+                    android:drawableRight="@drawable/password"
+                    android:drawablePadding="7dp"
+                    android:ems="10"
+                    android:gravity="right"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:paddingVertical="10dp"
+                    android:paddingRight="12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/emailEditText" />
+
+                <EditText
+                    android:id="@+id/confirmPasswordEditText"
+                    android:layout_width="325dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/textfield_d"
+                    android:drawableRight="@drawable/password"
+                    android:drawablePadding="7dp"
+                    android:ellipsize="start"
+                    android:ems="10"
+                    android:gravity="right"
+                    android:hint="@string/passwordVerification"
+                    android:inputType="textPassword"
+                    android:paddingVertical="10dp"
+                    android:paddingRight="12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/passwordEditText" />
+
+                <EditText
+                    android:id="@+id/PhoneNumber"
+                    android:layout_width="325dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/textfield_d"
+                    android:drawableRight="@drawable/phone"
+                    android:drawablePadding="7dp"
+                    android:ellipsize="start"
+                    android:ems="10"
+                    android:gravity="right"
+                    android:hint="@string/phone"
+                    android:inputType="phone"
+                    android:paddingVertical="10dp"
+                    android:paddingRight="12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/confirmPasswordEditText" />
+
+<!--                <EditText-->
+<!--                    android:id="@+id/Address"-->
+<!--                    android:layout_width="325dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:background="@drawable/textfield_d"-->
+<!--                    android:drawableRight="@drawable/home"-->
+<!--                    android:drawablePadding="7dp"-->
+<!--                    android:ellipsize="start"-->
+<!--                    android:ems="10"-->
+<!--                    android:gravity="right"-->
+<!--                    android:hint="@string/address"-->
+<!--                    android:inputType="textPostalAddress"-->
+<!--                    android:paddingVertical="10dp"-->
+<!--                    android:paddingRight="12dp"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintHorizontal_bias="0.508"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/PhoneNumber" />-->
+
+                    <!--                auto complete address        -->
+
+<!--                in order to use places sdk, please check the link below:
+https://developers.google.com/maps/documentation/places/android-sdk/client-migration#session-tokens -->
+<!--                <fragment-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/PhoneNumber"-->
+<!--                    android:id="@+id/Address"-->
+<!--                    android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:gravity="right"-->
+<!--                    android:visibility="visible"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintHorizontal_bias="0.483"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    tools:layout_editor_absoluteY="650dp" />-->
+
+                <EditText
+                    android:id="@+id/About"
+                    android:layout_width="325dp"
+                    android:layout_height="123dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/textfield_d"
+                    android:drawableRight="@drawable/about"
+                    android:drawablePadding="7dp"
+                    android:ellipsize="start"
+                    android:ems="10"
+                    android:gravity="right"
+                    android:hint="@string/about"
+                    android:inputType="text"
+                    android:insetTop="-32dp"
+                    android:paddingVertical="10dp"
+                    android:paddingRight="12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.51"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/PhoneNumber" />
+
+                <Button
+                    android:id="@+id/button_lets_volunteer"
+                    android:layout_width="243dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="130dp"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginEnd="130dp"
+                    android:layout_marginRight="130dp"
+                    android:text="@string/login"
+                    android:background="@drawable/ic_letsvolunteer"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/About" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+</ScrollView>
+

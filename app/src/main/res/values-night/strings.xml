@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="firstname">private Name</string>
+    <string name="lastName">Family Name</string>
+    <string name="email">email</string>
+    <string name="passwordVerification">Password Verification</string>
+</resources>
