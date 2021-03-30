@@ -8,13 +8,13 @@
 
     <ImageView
         android:id="@+id/topRoundedCircleImageView"
-        android:layout_width="500dp"
-        android:layout_height="1500dp"
-        android:layout_marginBottom="520dp"
-        android:src="@drawable/top_half_circle"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:ignore="MissingConstraints"
-        android:contentDescription="TODO" />
+        android:contentDescription="TODO"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@drawable/ellipse_59"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/howWasTextView"

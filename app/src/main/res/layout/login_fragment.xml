@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/btn_login3"
+        android:id="@+id/btn_login_not_now"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -21,14 +21,14 @@
         app:rippleColor="#756565" />
 
     <Button
-        android:id="@+id/btn_login2"
+        android:id="@+id/btn_register_rmail"
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="192dp"
-        android:text="already have account? login here "
+        android:text="Register with email"
         android:textColor="#6A6464"
-        android:textSize="8sp"
+        android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/login_google_btn"
         app:layout_constraintHorizontal_bias="0.497"
@@ -47,9 +47,9 @@
         android:textColor="#6A6464"
         android:textSize="8sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/btn_login2"
-        app:layout_constraintStart_toStartOf="@+id/btn_login2"
-        app:layout_constraintTop_toBottomOf="@+id/btn_login2"
+        app:layout_constraintEnd_toEndOf="@+id/btn_register_rmail"
+        app:layout_constraintStart_toStartOf="@+id/btn_register_rmail"
+        app:layout_constraintTop_toBottomOf="@+id/btn_register_rmail"
         app:rippleColor="#756565" />
 
     <ImageView

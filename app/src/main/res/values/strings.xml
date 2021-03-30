@@ -23,4 +23,5 @@
     <string name="time_text">time_text</string>
     <string name="location_headline">location_headline</string>
     <string name="location_text">location_text</string>
+    <string name="media_camera">media camera</string>
 </resources>
